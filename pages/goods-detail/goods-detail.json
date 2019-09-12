@@ -1,0 +1,8 @@
+{
+   "usingComponents": {
+      "wxlogin": "/components/wxlogin/wxlogin",
+   		"navigation": "/components/navigation/navigation"
+   	},
+     "navigationStyle": "custom",
+	"navigationBarTextStyle":"black"
+}

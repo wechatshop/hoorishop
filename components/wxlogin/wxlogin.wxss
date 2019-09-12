@@ -1,0 +1,231 @@
+.show-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99999999999;
+}
+
+.show-container .show-box {
+  width: 480rpx;
+  margin: 0 auto;
+  height: 530rpx;
+  background-color: #fff;
+  margin-top: 40%;
+  border-radius: 10rpx;
+}
+
+.show-logo-box {
+  text-align: center;
+  width: 80%;
+  border-bottom: 1px solid #f5f5f5;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.show-logo-box image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.show-mall-name {
+  font-size: 32rpx;
+  margin-top: 8rpx;
+  margin-bottom: 20rpx;
+  color: #333;
+}
+
+.show-text-box {
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+}
+
+.show-text-name {
+  font-size: 30rpx;
+  color: #333;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.show-text-info {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+
+.show-text-info text {
+  margin-right: 10rpx;
+  font-size: 26rpx;
+}
+
+.show-box button::after {
+  border-radius: 4rpx;
+  border: 0;
+}
+
+.show-box button {
+  width: 150rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  background-color: #04be01;
+  color: #fff;
+}
+
+.show-share {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999999;
+}
+
+.show-close-share {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+}
+
+.show-share-box {
+  width: 70%;
+  background-color: #fff;
+  height: 400rpx;
+  overflow: hidden;
+  border-radius: 10rpx;
+  z-index: 9999999;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 35%;
+  right: 0;
+  margin: 0 auto;
+}
+
+.show-share-title {
+  text-align: center;
+  color: #e1372d;
+  font-size: 34rpx;
+  margin-top: 10%;
+}
+
+.show-share-btn-box {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+.show-share-share {
+  display: inline-block;
+  width: 50%;
+  height: 160rpx;
+  position: relative;
+}
+
+.show-share-share image {
+  width: 46rpx;
+  height: 46rpx;
+  display: block;
+  margin: 0 auto;
+  background-color: #e1372d;
+  padding: 26rpx;
+  border-radius: 50%;
+}
+
+.show-share-share text {
+  font-size: 28rpx;
+  display: block;
+  text-align: center;
+  color: #e1372d;
+  margin-top: 6rpx;
+}
+
+.show-share-share .pop-box-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160rpx;
+  opacity: 0;
+}
+
+.show-share-code {
+  display: inline-block;
+  width: 50%;
+  height: 160rpx;
+  position: relative;
+}
+
+.show-share-code image {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  margin: 0 auto;
+  background-color: #e1372d;
+  padding: 24rpx;
+  border-radius: 50%;
+}
+
+.show-share-code text {
+  font-size: 28rpx;
+  display: block;
+  text-align: center;
+  color: #e1372d;
+  margin-top: 6rpx;
+}
+
+.show-code-box {
+  width: 70%;
+  background-color: #fff;
+  height: 610rpx;
+  overflow: hidden;
+  border-radius: 10rpx;
+  z-index: 9999999;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 25%;
+  right: 0;
+  margin: 0 auto;
+}
+.show-code-re{
+  width: 100%;
+  height: 610rpx;
+  position: relative;
+}
+.show-code-box image {
+  width: 480rpx;
+  height: 480rpx;
+  display: block;
+  margin: 0 auto;
+  padding-top: 12rpx;
+}
+
+.show-code-box .show-code-btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #e1372d;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+}
+
+.userlogin-btn-box {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: space-between;
+}

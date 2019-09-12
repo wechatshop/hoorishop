@@ -1,0 +1,88 @@
+
+
+<wxlogin wxlogin="{{wxlogin}}" bindloginSuccess="loginSuccess"></wxlogin>
+
+<view class='user'>
+   <view class='header bg-color acea-row row-between-wrapper'>
+      <view class='picTxt acea-row row-between-wrapper'>
+         <view class='pictrue'>
+          <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+      
+         </view>
+         <view class='text'>
+            <view class='acea-row row-middle'>
+               <view class='name line1'>
+               <open-data class="userinfo-nickname" type="userNickName"></open-data>
+               </view>
+               
+            </view>
+
+
+            <block wx:if="{{isLogin  }}">
+            <view class='id' bindtap=''>ID：{{userInfo.uid || 0}}<text class='iconfont icon-bianji1'></text></view>
+            </block>
+            <block wx:else>
+                  <view class='id' bindtap='goUserInfo'>点击授权个人信息<text class='iconfont icon-bianji1'></text></view>
+            </block>
+
+
+
+
+         </view>
+      </view>
+      <text class='hooriicon iconshezhi' bindtap='Setting'></text>
+   </view>
+
+   <view class='wrapper'>
+      
+      
+      <view class='myOrder'>
+        <view class='title acea-row row-between-wrapper'>
+           <view>我的订单</view>
+           <view class='allOrder' hover-class='none' bindtap="goPage"  data-url='/pages/order-list/order-list'>全部订单<text class='hooriicon iconjiantou'></text></view>
+        </view>
+        <view class='orderState acea-row row-middle'>
+           <view class='item' hover-class='none' bindtap="goPage" data-url='/pages/order-list/order-list?currentType=0'>
+              <view class='pictrue'> <image src="../../images/order-details/orderform_pay.png"></image></view>
+              <view>待付款</view>
+           </view>
+            <view class='item' hover-class='none' bindtap="goPage"  data-url='/pages/order-list/order-list?currentType=1'>
+              <view class='pictrue'>
+            <image src="../../images/order-details/orderform_ship.png"></image>
+              </view>
+              <view>待发货</view>
+           </view>
+            <view class='item' hover-class='none' bindtap="goPage" data-url='/pages/order-list/order-list?currentType=2'>
+              <view class='pictrue'>
+             <image src="../../images/order-details/delivering.png"></image>
+              </view>
+              <view>待收货</view>
+           </view>
+            <view class='item' hover-class='none' bindtap="goPage" data-url='/pages/order-list/order-list?currentType=3'>
+              <view class='pictrue'>
+            <image src="../../images/order-details/orderform.png"></image>
+              </view>
+              <view>待评价</view>
+           </view>
+        </view>
+      </view>
+      <view class='myService'>
+         <view class='title acea-row row-middle'>我的服务</view>
+         <view class='serviceList acea-row row-middle'>
+            <view class='item' wx:for="{{serviceList}}" wx:key bindtap='goPage' data-url='{{item.url}}' wx:if="{{item.url!='#'}}">
+              <view class='pictrue'><image src='{{item.pic}}'></image></view>
+              <view>{{item.name}}</view>
+            </view>
+            <button class='item' open-type='contact' hover-class='none'>
+              <view class='pictrue'><image src='../../images/profile_service.png'></image></view>
+              <view>联系客服</view>
+            </button>
+         </view>
+      </view>
+   </view>
+  
+     <view class="support" bindtap="">
+	<view>FEC零售提供技术支持</view>
+</view>
+    
+</view>

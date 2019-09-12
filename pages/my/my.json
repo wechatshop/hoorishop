@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "wxlogin": "../../components/wxlogin/wxlogin"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#b5272d",
+    "navigationBarTitleText": "个人中心"
+    
+}
