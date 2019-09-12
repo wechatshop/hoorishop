@@ -1,9 +1,10 @@
 # hoorishop
 hoorishop是一个基于go语言编写的后台的电商类微信小程序，系统只需安装nginx和mysql就可运行，无需其它插件。前端代码完全开源。前端基于开源程序fire-shop-lite修改而来，同时提供对应的后端程序。我们提供尽可能详细的操作手册，即使不是开发人员，只要按照手册傻瓜式操作，也能快速搭建一套属于自己的电商小程序。帮助您以最低的成本试水微信电商。
 # 后台演示地址(支持多账号、一个后台支持多个小程序)
-`https://www.tinywsn.com`   
+   
+[`https://www.tinywsn.com`](https://www.tinywsn.com)
 
-注册地址(仅演示) `https://www.tinywsn.com/#/user/reg`  
+[`https://www.tinywsn.com/#/user/reg`](https://www.tinywsn.com/#/user/reg`)　注册地址(仅演示)  
 
 后台使用费用`198元/年` ，`498元/终身`授权(提供带砍价拼团前端模板)  ，加VIP技术交流群  
 
