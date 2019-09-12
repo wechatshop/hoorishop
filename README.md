@@ -4,7 +4,7 @@ hoorishop是一个基于go语言编写的后台的电商类微信小程序，系
    
 [`https://www.tinywsn.com`](https://www.tinywsn.com)
 
-[`https://www.tinywsn.com/#/user/reg`](https://www.tinywsn.com/#/user/reg`)　注册地址(仅演示)  
+[`https://www.tinywsn.com/#/user/reg`](https://www.tinywsn.com/#/user/reg)　注册地址(仅演示)  
 
 后台使用费用`198元/年` ，`498元/终身`授权(提供带砍价拼团前端模板)  ，加VIP技术交流群  
 
