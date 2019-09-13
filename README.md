@@ -85,7 +85,7 @@ nginx需要安装HTTPS证书，配置nginx反向代理，安装包中提供示�
 
 
 
-# 联系作者
+# 联系作者(微信)
 
 ![](https://images.tinywsn.com/wechat.jpg)  
 
