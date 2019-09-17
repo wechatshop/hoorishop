@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<wxlogin wxlogin="{{wxlogin}}" bindloginSuccess="loginSuccess"></wxlogin>
 <navigation id='Navigation' show-icon="{{true}}" title="礼券" show-title="{{true}}" class=""></navigation>
 <view class="container">
 
