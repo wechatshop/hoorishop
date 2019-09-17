@@ -1,7 +1,6 @@
 {
   "navigationStyle": "custom",
   "usingComponents": {
-    "wxlogin": "../../components/wxlogin/wxlogin",
   		"navigation": "/components/navigation/navigation"
   	}
 }

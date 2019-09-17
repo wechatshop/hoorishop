@@ -1,4 +1,3 @@
-<wxlogin wxlogin="{{wxlogin}}" bindloginSuccess="loginSuccess"></wxlogin>
 <view class="container {{iphone}}" style="background-color: {{bgColor}};">
 	<view class="header-container">
 	  <navigator open-type="navigateBack" delta="1" hover-class="navigator-hover">
