@@ -1,6 +1,8 @@
 var app = getApp()
+var checkAuth = require('../../utils/checkAuth.js')
 Page({
   data: {
+    wxlogin: true,
     score: 0,//积分
     score_sign_continuous: 0,//连续签到次数
     ci: 0 //今天是否已签到
@@ -9,9 +11,20 @@ Page({
   onShow() {
     this.checkScoreSign();
   },
+  loginSuccess: function (e) {
+    var that = this
+    console.log("loginSuccess===============>")
+    that.onShow()
+  },
   //签到按钮
   scoresign: function () {
     var that = this;
+    console.log("checkAuth=>", checkAuth.userAuthed(that))
+    console.log("app.globalData.token=", app.globalData.token)
+    if (!checkAuth.checkAuth(that)) {
+      return
+    }
+
     wx.request({
       url: app.globalData.urls + '/score/sign',
       data: {
