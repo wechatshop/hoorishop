@@ -1,5 +1,4 @@
 // pages/freshman/freshman.js
-var checkAuth = require('../../utils/checkAuth.js')
 var app = getApp()
 Page({
 	data: {
@@ -9,7 +8,6 @@ Page({
 		conponsPic: null,
 		couponsId: null,
 		hasNoCoupons: true,
-    wxlogin: true,
 		coupons: null
 	},
 
@@ -79,19 +77,8 @@ Page({
 			}
 		})
 	},
-  loginSuccess: function (e) {
-    var that = this
-    console.log("loginSuccess===============>")
-    that.onShow()
-  },
 	getCoupons: function(e) {
-		var that = this
-    console.log("checkAuth=>", checkAuth.userAuthed(that))
-    console.log("app.globalData.token=", app.globalData.token)
-    if (!checkAuth.checkAuth(that)) {
-      return
-    }
-
+		var that = this;
 		wx.request({
 			url: app.globalData.urls + '/discounts/fetch',
 			data: {

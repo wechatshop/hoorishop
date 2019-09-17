@@ -1,11 +1,9 @@
 //index.js
 //获取应用实例
-var checkAuth = require('../../utils/checkAuth.js')
 var app = getApp()
 Page({
   data: {
     coupons: '',
-    wxlogin: true,
     busid: 0
   },
 
@@ -15,11 +13,6 @@ Page({
     if (app.globalData.iphone == true) { that.setData({ iphone: 'iphone' }) }
     that.getCoupons();
     
-  },
-  loginSuccess: function (e) {
-    var that = this
-    console.log("loginSuccess===============>")
-    that.onShow()
   },
   getCoupons: function () {
     var that = this;
@@ -40,14 +33,7 @@ Page({
     })
   },
   gitCoupon: function (e) {
-    var that = this
-    console.log("checkAuth=>", checkAuth.userAuthed(that))
-    console.log("app.globalData.token=", app.globalData.token)
-    if (!checkAuth.checkAuth(that)) {
-      return
-    }
-
-    
+    var that = this;
     wx.request({
       url: app.globalData.urls + '/discounts/fetch',
       data: {

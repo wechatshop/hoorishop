@@ -1,6 +1,5 @@
 //index.js
 //获取应用实例
-var checkAuth = require('../../utils/checkAuth.js')
 var app = getApp()
 Page({
   data: {
@@ -15,9 +14,6 @@ Page({
   },
   getMyCoupons: function () {
     var that = this;
-    if (!checkAuth.checkAuth(that)) {
-      return
-    }
     wx.request({
       url: app.globalData.urls + '/discounts/my',
       data: {

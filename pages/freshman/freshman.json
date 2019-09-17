@@ -1,7 +1,4 @@
 {
-  "usingComponents": {
-    "wxlogin": "../../components/wxlogin/wxlogin"
-  },
   "navigationStyle": "custom",
   "navigationBarTitleText": "新人专享",
   "navigationBarTextStyle": "white",
